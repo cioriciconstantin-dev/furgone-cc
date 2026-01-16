@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Furgone EFC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚐 Furgone EFC</h1>
+
+<section>
+  <h2>Nuovo intervento</h2>
+
+  <label>Cantiere</label>
+  <input id="cantiere" placeholder="Cliente / luogo">
+
+  <label>Materiale</label>
+  <input id="materiale" placeholder="Bombola CO₂ 2kg">
+
+  <label>Quantità</label>
+  <input id="quantita" type="number" min="1">
+
+  <button onclick="aggiungi()">Aggiungi</button>
+</section>
+
+<section>
+  <h2>Materiale usato</h2>
+  <ul id="lista"></ul>
+</section>
+
+<button class="whatsapp" onclick="mandaWhatsApp()">
+  📲 Richiedi reintegro
+</button>
+
+<script src="app.js"></script>
+</body>
+</html>
